@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima!</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicons/icons8-cloud-16.png" type="image/x-icon">
+</head>
+<body>
+    <main id="main">
+        <div id="full-weather">
+            <h3 id="title">Confira o clima de uma cidade:</h3>
+            <div id="weather-forms">
+                <input type="search" name="weather-input" id="weather-input" placeholder="Digite o nome da cidade">
+                <button id="search"><span class="material-symbols-outlined">search</span></button>
+            </div>
+            <div id="weather-data">
+                <div id="weather-location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <h2 id="weather-data-city">Macaé</h2>
+                    <img id="weather-data-flag" src="#" alt="">
+                </div>
+                <div id="weather-temperature">
+                    <p id="weather-data-temperature"><span id="temp">25</span>&deg;C</p>
+                </div>
+                <div id="weather-description">
+                    <p id="weather-data-description">Nublado</p>
+                    <img id="weather-data-description-icon" src="#" alt="">
+                </div>
+                <div id="weather-details-div">
+                    <div id="weather-details-humidity" class="weather-details">
+                        <span class="material-symbols-outlined">water_drop</span>
+                        <p id="weather-data-details-humidity">83%</p>
+                    </div>
+                    <div id="weather-details-wind" class="weather-details">
+                        <span class="material-symbols-outlined">air</span>
+                        <p id="weather-data-details-wind">5.14Km/h</p>
+                    </div>
+                </div>        
+            </div>
+            <div id="weather-error-response">
+                <p id="error-text">Não foi possível encontrar o clima de uma cidade com este nome.</p>
+            </div>
+            <div id="loading-data-div">
+                <div id="loading"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

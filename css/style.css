@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --color1: #5B4CED;
+    --color2: #8CCAF5;
+    --color3: #aad5f5;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#full-weather {
+    background-color: var(--color1);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.429);
+    max-height: 500px;
+}
+
+#title {
+    color: #fff;
+}
+
+#weather-forms {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    padding: 1.5rem 0px;
+}
+
+#weather-input {
+    padding: 5px;
+    border-radius: 5px;
+    flex: 1;
+    border: none;
+}
+
+#search {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+#search:active {
+    background-color: var(--color3);
+}
+
+#weather-data{
+    display: block;
+}
+
+#weather-location {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 1.1rem 0px;
+}
+
+#weather-data-description-icon{
+    width: 45px;
+}
+
+#weather-temperature {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+}
+
+#weather-description {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 1.1rem 0px;
+}
+
+#weather-details-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather-details {
+    display: flex;
+    color: #fff;
+    padding: 15px;
+    align-items: center;
+}
+
+#weather-details-wind {
+    border-left: 1px #fff solid;
+}
+
+#weather-error-response {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.496);
+    text-align: center;
+    padding: 15px 0px;
+    max-width: 300px;
+    display: none;
+}
+
+#loading-data-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding: 15px 0px;
+}
+
+#loading {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px #fff0 solid;
+    border-right-color: white;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
