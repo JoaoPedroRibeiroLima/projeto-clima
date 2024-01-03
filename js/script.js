@@ -100,4 +100,4 @@ document.addEventListener("keydown", (evt) => {
 })
 
 //evento default
-renderWeatherData("rio de janeiro")
+renderWeatherData("macaé")
